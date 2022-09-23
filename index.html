@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body
+    class="w-[100%] min-h-screen bg-very-dark-blue flex justify-center items-center font-overpass"
+  >
+    <!-- Rating state start -->
+    <main class="max-w-[350px] mx-auto bg-dark-blue rounded-2xl overflow-hidden p-4">
+      <object
+        data=""
+        type=""
+        class="p-3 bg-medium-grey bg-opacity-20 rounded-full w-[40px]"
+      >
+        <img src="images/icon-star.svg" alt="" class="w-[100%]" />
+      </object>
+      <h1 class="text-[24px] font-bold mt-4 text-white">How did we do?</h1>
+      <p class="text-medium-grey text-[15px]">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <form action="#" class="py-6 space-y-8">
+        <ul class="flex justify-between text-medium-grey">
+          <li>
+            <input type="radio" id="one" name="rate" class="absolute invisible" />
+            <label
+              for="one"
+              class="px-[16px] py-[10px] rounded-full bg-medium-grey bg-opacity-20 cursor-pointer"
+              >1</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="two" name="rate" class="absolute invisible" />
+            <label
+              for="two"
+              class="px-[16px] py-[10px] rounded-full bg-medium-grey bg-opacity-20 cursor-pointer"
+              >2</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="three" name="rate" class="absolute invisible" />
+            <label
+              for="three"
+              class="px-[16px] py-[10px] rounded-full bg-medium-grey bg-opacity-20 cursor-pointer"
+              >3</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="four" name="rate" class="absolute invisible" />
+            <label
+              for="four"
+              class="px-[16px] py-[10px] rounded-full bg-medium-grey bg-opacity-20 cursor-pointer"
+              >4</label
+            >
+          </li>
+          <li>
+            <input type="radio" id="five" name="rate" class="absolute invisible" />
+            <label
+              for="five"
+              class="px-[16px] py-[10px] rounded-full bg-medium-grey bg-opacity-20 cursor-pointer"
+              >5</label
+            >
+          </li>
+        </ul>
+        <button
+          onclick="changePage()"
+          class="bg-orange text-white font-bold text-center rounded-full w-[100%] py-2 transition-all duration-200 hover:bg-white hover:text-very-dark-blue"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <!-- <article class="text-center space-y-4">
+      <img src="images/illustration-thank-you.svg" alt="" class="mx-auto" />
+      <p class="flex justify-center mx-auto gap-4"></p>
+      <p
+        class="text-orange rounded-full mx-auto font-thin text-[15px] bg-light-grey bg-opacity-20 w-[70%] p-2 text-center"
+      >
+        You selected ${k} out of 5
+      </p>
+      <h1 class="text-[24px] font-bold mt-4 text-white">Thank You!</h1>
+      <p class="text-medium-grey text-[15px]">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </article> -->
+
+    <script src="js/style.js"></script>
+  </body>
+</html>
